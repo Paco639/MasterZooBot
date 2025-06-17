@@ -14,7 +14,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Обробник усіх повідомлень
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.message.text
-result = find_store_by_text(query)
+  result = find_store_by_text(query)
     await update.message.reply_text(result)
 
 def main():
